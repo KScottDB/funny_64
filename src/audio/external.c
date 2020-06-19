@@ -2413,7 +2413,7 @@ void play_race_fanfare(void) {
 }
 
 void play_toads_jingle(void) {
-    play_sequence(SEQ_PLAYER_ENV, SEQ_EVENT_TOAD_MESSAGE, 0);
+    //play_sequence(SEQ_PLAYER_ENV, SEQ_EVENT_TOAD_MESSAGE, 0);
     D_8033211C = 0x80 | 20;
 #ifdef VERSION_EU
     D_EU_80300558 = 2;

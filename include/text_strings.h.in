@@ -185,10 +185,10 @@
  * Menus Text (Pause, Course Completed)
  */
 // Main Courses
-#define TEXT_COURSE _("COURSE")
-#define TEXT_MYSCORE _("MYSCORE")
-#define TEXT_CONTINUE _("CONTINUE")
-#define TEXT_EXIT_COURSE _("EXIT COURSE")
+#define TEXT_COURSE _("4 COURSE MEAL")
+#define TEXT_MYSCORE _("MY-E-AH-HEE")
+#define TEXT_CONTINUE _("CUNT IN YOU")
+#define TEXT_EXIT_COURSE _("EXIT HORSE")
 #ifndef VERSION_EU // "R" text is different in EU
 #define TEXT_CAMERA_ANGLE_R _("SET CAMERA ANGLE WITH R")
 #endif
@@ -202,25 +202,25 @@
 // Course Completed Misc Text
 #define TEXT_CATCH _("CATCH")
 #define TEXT_CLEAR _("CLEAR")
-#define TEXT_HUD_HI_SCORE _("HI SCORE")
+#define TEXT_HUD_HI_SCORE _("HI, WHORE!")
 
 // Save Options
-#define TEXT_SAVE_AND_CONTINUE _("SAVE & CONTINUE")
-#define TEXT_SAVE_AND_QUIT _("SAVE & QUIT")
+#define TEXT_SAVE_AND_CONTINUE _("KILL ME & SOFTLOCK THE GAME")
+#define TEXT_SAVE_AND_QUIT     _("GO TO THE TITLE SCREEN")
 #define TEXT_CONTINUE_WITHOUT_SAVING _("CONTINUE, DON'T SAVE")
 
 /**
  * Ending Peach cutscene text.
  */
-#define TEXT_FILE_MARIO_EXCLAMATION _("Mario!")
-#define TEXT_POWER_STARS_RESTORED __("The power of the Stars is restored to the castle...")
-#define TEXT_THANKS_TO_YOU __("...and it's all thanks to you!")
-#define TEXT_THANK_YOU_MARIO __("Thank you, Mario!")
-#define TEXT_SOMETHING_SPECIAL __("We have to do something special for you...")
-#define TEXT_LISTEN_EVERYBODY _("Listen, everybody,")
-#define TEXT_LETS_HAVE_CAKE _("let's bake a delicious cake...")
-#define TEXT_FOR_MARIO _("...for Mario...")
-#define TEXT_FILE_MARIO_QUESTION _("Mario!")
+#define TEXT_FILE_MARIO_EXCLAMATION _("Ding bing phh bong bombombadom bay bom badom bombom bom BAW")
+#define TEXT_POWER_STARS_RESTORED __("W-W-WHATS GOING ON ON")
+#define TEXT_THANKS_TO_YOU __("★synth noises★")
+#define TEXT_THANK_YOU_MARIO __("DING DING")
+#define TEXT_SOMETHING_SPECIAL __("★synth noises★")
+#define TEXT_LISTEN_EVERYBODY _("LETS DO THE CRAZY FROG!")
+#define TEXT_LETS_HAVE_CAKE _("★synth noises★")
+#define TEXT_FOR_MARIO _("DING DING")
+#define TEXT_FILE_MARIO_QUESTION _("★synth noises★")
 
 #endif
 

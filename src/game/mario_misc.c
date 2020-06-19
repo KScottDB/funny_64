@@ -124,24 +124,11 @@ static void toad_message_opaque(void) {
 }
 
 static void toad_message_talking(void) {
-    if (cur_obj_update_dialog_with_cutscene(3, 1, CUTSCENE_DIALOG, gCurrentObject->oToadMessageDialogId)
+    if (cur_obj_update_dialog_with_cutscene(3, 1, CUTSCENE_READ_MESSAGE, TOAD_STAR_1_DIALOG_AFTER)
         != 0) {
         gCurrentObject->oToadMessageRecentlyTalked = 1;
         gCurrentObject->oToadMessageState = TOAD_MESSAGE_FADING;
-        switch (gCurrentObject->oToadMessageDialogId) {
-            case TOAD_STAR_1_DIALOG:
-                gCurrentObject->oToadMessageDialogId = TOAD_STAR_1_DIALOG_AFTER;
-                bhv_spawn_star_no_level_exit(0);
-                break;
-            case TOAD_STAR_2_DIALOG:
-                gCurrentObject->oToadMessageDialogId = TOAD_STAR_2_DIALOG_AFTER;
-                bhv_spawn_star_no_level_exit(1);
-                break;
-            case TOAD_STAR_3_DIALOG:
-                gCurrentObject->oToadMessageDialogId = TOAD_STAR_3_DIALOG_AFTER;
-                bhv_spawn_star_no_level_exit(2);
-                break;
-        }
+        bobomb_act_explode();
     }
 }
 
@@ -279,6 +266,7 @@ void bhv_unlock_door_star_loop(void) {
                 gCurrentObject->oUnlockDoorStarTimer = 0;
                 gCurrentObject->oUnlockDoorStarState++; // Sets state to UNLOCK_DOOR_STAR_DONE
             }
+            bobomb_act_explode();
             break;
         case UNLOCK_DOOR_STAR_DONE: // The object stays loaded for an additional 50 frames so that the
                                     // sound doesn't immediately stop.

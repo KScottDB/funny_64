@@ -35,8 +35,10 @@ void celeb_star_act_spin_around_mario(void) {
     o->oFaceAngleYaw += 0x1000;
     o->oMoveAngleYaw += 0x2000;
 
-    if (o->oTimer == 40)
+    if (o->oTimer == 40) {
         o->oAction = CELEB_STAR_ACT_FACE_CAMERA;
+        bobomb_act_explode();
+    }
     if (o->oTimer < 35) {
         spawn_object(o, MODEL_SPARKLES, bhvCelebrationStarSparkle);
         o->oCelebStarDiameterOfRotation++;

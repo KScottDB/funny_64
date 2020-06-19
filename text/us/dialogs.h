@@ -1888,20 +1888,7 @@ bugging me! I think I'll\n\
 blow it away!"))
 
 DEFINE_DIALOG(DIALOG_154, 1, 5, 30, 200, _("\
-Hold on to your hat! If\n\
-you lose it, you'll be\n\
-easily injured. If you\n\
-lose it, look for it in the\n\
-course where you lost it.\n\
-Speaking of lost, the\n\
-Princess is still stuck in\n\
-the walls somewhere.\n\
-Please help, Mario!\n\
-\n\
-Oh, you know that there\n\
-are secret worlds in the\n\
-walls as well as in the\n\
-paintings, right?"))
+shupa mahrio in real loif"))
 
 DEFINE_DIALOG(DIALOG_155, 1, 6, 30, 200, _("\
 Thanks to the power of\n\

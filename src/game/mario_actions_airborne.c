@@ -913,6 +913,8 @@ s32 act_ground_pound(struct MarioState *m) {
     u32 stepResult;
     f32 yOffset;
 
+    m->pos[1] += 50.0f;
+
     play_sound_if_no_flag(m, SOUND_ACTION_THROW, MARIO_ACTION_SOUND_PLAYED);
 
     if (m->actionState == 0) {
@@ -957,6 +959,7 @@ s32 act_ground_pound(struct MarioState *m) {
                 set_mario_action(m, ACT_BUTT_STUCK_IN_GROUND, 0);
             } else {
                 play_mario_heavy_landing_sound(m, SOUND_ACTION_TERRAIN_HEAVY_LANDING);
+                //bobomb_act_explode();
                 if (!check_fall_damage(m, ACT_HARD_BACKWARD_GROUND_KB)) {
                     m->particleFlags |= PARTICLE_MIST_CIRCLE | PARTICLE_HORIZONTAL_STAR;
                     set_mario_action(m, ACT_GROUND_POUND_LAND, 0);
